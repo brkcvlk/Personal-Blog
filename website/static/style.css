@@ -1,0 +1,28 @@
+
+nav a{
+    color: white;
+}
+
+nav a:hover{
+    color: wheat;
+}
+
+.container {
+    border-radius: 10px;
+}
+
+nav.navbar a.active{
+    border-bottom: 1px solid yellow;
+}
+
+nav.navbar {
+    border-bottom: 1px solid gray;
+}
+
+ul>li>div>a {
+    color: black;
+}
+
+.articlelist {
+    list-style-type: none;
+}

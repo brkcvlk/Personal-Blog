@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body_content %}
+<div class="container mt-5 d-flex justify-content-center p-5 bg-light" style="width: 500px; height: 550px;">
+    <div class="d-inline">
+        <h1>New Article</h1>
+        <form action="" method="post" class="mt-3">
+            <input type="text" placeholder="Article Title" name="title" style="width: 348px; height: 40px;" required>
+            <br>
+            <textarea name="description" id="" cols="37" rows="10" required>Content</textarea>
+            <br>
+            <input class="btn btn-success mt-2" type="submit" value="Publish">
+        </form>
+    </div>
+</div>
+{% endblock %}

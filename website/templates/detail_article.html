@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body_content %}
+<div class="container bg-light mt-5 p-4" style="width: 600px; height: 700px;">
+    <div class="row">
+        <h2 class="ml-4">{{d.title}}</h2>
+        <div class="ml-auto">
+            {% if current_user.username == 'Admin'%}
+                <a href="{{url_for('views.Admin')}}" class="btn btn-light ml-2">
+                    <span style='font-size:20px;'>&#8617;</span>
+                </a>
+            {% else %}
+                <a href="{{url_for('views.Home')}}" class="btn btn-light ml-2">
+                    <span style='font-size:20px;'>&#8617;</span>
+                </a>
+            {% endif %}
+        </div>
+        <ul class="articlelist col-12 p-3 ml-3">
+            <li>
+                <p>{{d.date}}</p>
+            </li>
+            <li>
+                <p>{{d.description}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

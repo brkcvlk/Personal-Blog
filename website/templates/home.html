@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body_content %}
+<div class="container bg-light mt-5 p-4" style="width: 600px; height: 700px;">
+    <div class="row">
+        <h2 class="ml-4">Personal Blog</h2>
+        <ul class="articlelist col-12 p-3 ml-3">
+            {% for d in list_article%}
+                <li>
+                    <div class="d-flex">
+                        <a href="/article/{{d.id}}" class="mt-2"><strong>{{d.title}}</strong></a> 
+                        <div class="ml-auto">
+                            <p>{{d.date}}</p>
+                        </div>
+                    </div>
+                    <br>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
