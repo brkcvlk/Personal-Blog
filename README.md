@@ -1,4 +1,4 @@
-# Welcome to the Number Guessing Game!
+# Welcome to the Personal Blog!
 
 Sample solution for the  [personal-blog](https://roadmap.sh/projects/personal-blog)  challenge from  [roadmap.sh.](https://roadmap.sh/)
 
